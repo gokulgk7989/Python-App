@@ -8,7 +8,6 @@ redis = Redis(host='redis', port=6379)
 
 @app.route('/')
 def hello():
-    count = redis.incr('hits')
     return '<h1 style="color:red">Welcome to Demo python app</h1>'
 
 if __name__ == "__main__":
